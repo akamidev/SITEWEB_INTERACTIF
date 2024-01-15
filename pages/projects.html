@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROJECTS</title>
+    <link rel="icon" href="../img/logo.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/hamburger.css" />
+    <link rel="stylesheet" href="../css/subscriptions.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+  <body>
+    <header>
+      <!-- NAV -->
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <img src="../img/logo.png" alt="logo" /><a
+            href="#"
+            class="navbar__sitename"
+            >Mon site web.com</a
+          >
+        </div>
+        <button class="navbar__toggle" id="navbar-toggle">
+          <span class="burger">&#9776;</span>
+        </button>
+        <ul id="navbar-container" class="navbar__container">
+          <li class="navbar__item navbar__item--active">
+            <a href="../index.html" data-page="home">Accueil</a>
+          </li>
+          <li class="navbar__item">
+            <a href="./team.html" data-page="equipe">Notre équipe</a>
+          </li>
+          <li class="navbar__item">
+            <a href="./projects.html" data-page="projets">Nos projets</a>
+          </li>
+          <li class="navbar__item">
+            <a href="./products.html" data-page="produits">Nos produits</a>
+          </li>
+          <li class="navbar__item">
+            <a href="./contact.html" data-page="contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="subscriptions">
+        <div>
+          <h2 class="subscriptions__title">Nos abonnements</h2>
+          <div class="subscriptions__check">
+            <p>Mensuel</p>
+            <label for="checkbox" class="subscriptions__switch">
+              <input type="checkbox" id="checkbox" />
+              <div
+                class="subscriptions__slider subscriptions__slider--round"
+              ></div>
+            </label>
+            <p>Annuel</p>
+          </div>
+        </div>
+        <!-- Prix -->
+        <article class="subscriptions__price">
+          <!-- basic -->
+          <section class="subscriptions__price-box">
+            <header class="box box1">
+              <p>Basic</p>
+              <h4>
+                <span>€ </span><span class="subscriptions__basic">9.99</span>
+              </h4>
+            </header>
+            <div class="price-list">
+              <ul>
+                <li>2 pages</li>
+                <li>assistance 1j/7</li>
+                <li>Stockage : 50GB</li>
+              </ul>
+              <a href="#" class="btn btn1">Acheter </a>
+            </div>
+          </section>
+          <!-- pro -->
+          <section class="subscriptions__price-box">
+            <header class="box box2">
+              <p>Professionel</p>
+              <h4>
+                <span>€ </span><span class="subscriptions__pro">19.99</span>
+              </h4>
+            </header>
+            <div class="price-list">
+              <ul>
+                <li>50 pages</li>
+                <li>assistance 3j/7</li>
+                <li>Stockage : 500GB</li>
+              </ul>
+              <a href="#" class="btn btn2">Acheter </a>
+            </div>
+          </section>
+          <!-- master -->
+          <section class="subscriptions__price-box">
+            <header class="box box3">
+              <p>Master</p>
+              <h4>
+                <span>€ </span><span class="subscriptions__master">29.99</span>
+              </h4>
+            </header>
+            <div class="price-list">
+              <ul>
+                <li>1000 pages</li>
+                <li>assistance 7j/7</li>
+                <li>Stockage : 2TB</li>
+              </ul>
+              <a href="#" class="btn btn3">Acheter </a>
+            </div>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__title"><img src="../img/logo.png" alt="logo" /></div>
+      <section class="footer__content">
+        <div>
+          <h3>Titre</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At,
+            perspiciatis.
+          </p>
+        </div>
+        <div>
+          <h3>Titre</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At,
+            perspiciatis.
+          </p>
+        </div>
+        <div>
+          <h3>Titre</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At,
+            perspiciatis.
+          </p>
+        </div>
+        <div>
+          <h3>Titre</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. At,
+            perspiciatis.
+          </p>
+        </div>
+      </section>
+      <div class="footer__socials">
+        <a
+          href="https://facebook.com/yourprofile"
+          target="_blank"
+          class="footer__icon footer__icon--facebook"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://twitter.com/yourprofile"
+          target="_blank"
+          class="footer__icon footer__icon--twitter"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://instagram.com/yourprofile"
+          target="_blank"
+          class="footer__icon footer__icon--instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://linkedin.com/in/yourprofile"
+          target="_blank"
+          class="footer__icon footer__icon--linkedin"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="../js/projects.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

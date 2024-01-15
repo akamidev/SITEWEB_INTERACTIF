@@ -1,0 +1,142 @@
+/*=============================================
+COMPOSANT : HERO
+===============================================*/
+
+:root {
+  --darkBlue: #4c8bc6;
+  --lightBlue: #afcce7;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 10% 4% 5rem 4%;
+  background-image: url("../img/hero.png");
+  background-size: 100vw;
+  background-position: top 10px right 0rem;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 20vh;
+  border: solid red 0px;
+  background-color: transparent;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.hero__video {
+  position: absolute;
+  opacity: 0.3;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -999;
+}
+
+.hero__content {
+  background-color: rgba(108, 108, 107, 0.5);
+  padding: 3rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.hero__title {
+  font-size: 4vw;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.hero__text {
+  font-size: 3.5vw;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.hero__button {
+  background-color: var(--lightBlue);
+  font-weight: bold;
+  color: #000;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  border-radius: 10rem;
+  /* display: inline-block; */
+  max-width: fit-content;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+
+.hero__button--active {
+  color: #fff;
+  background-color: var(--darkBlue);
+}
+
+.hero__button--inactive:hover {
+  background-color: var(--darkBlue);
+  color: #fff;
+}
+
+@media screen and (min-width: 450px) {
+  .hero__actions {
+    display: block;
+    margin-top: 4rem;
+  }
+
+  .hero__button {
+    /* flex: 1; */
+    /* display: inline-block; */
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 777px) {
+  .hero {
+    background-size: 50vw;
+  }
+
+  .hero__title {
+    color: #333;
+    font-size: calc(2.2vw + 0.5rem);
+  }
+
+  .hero__text {
+    font-size: calc(1.5vw + 0.5rem);
+    color: #666;
+  }
+
+  .hero__content {
+    background-color: rgba(249, 249, 242, 0.1);
+    padding: 3rem;
+    width: 45%;
+  }
+
+  .hero__button {
+    margin: 1rem;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-height: 40vh;
+    background-size: 50vw;
+  }
+}

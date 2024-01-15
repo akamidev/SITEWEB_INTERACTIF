@@ -1,0 +1,50 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Texte à gauche, image à droite */
+  padding: 20px; /* Ajoutez du padding selon vos besoins */
+  background-image: url("chemin/vers/votre-image.jpg"); /* Remplacez par le chemin de votre image */
+  background-size: contain;
+  background-position: center center; /* L'image se positionne sur la droite et au centre verticalement */
+  background-repeat: no-repeat;
+  min-height: 100%; /* Réglez la hauteur minimale pour la visibilité de l'image */
+}
+
+.hero__content {
+  width: 50%;
+  /* Pour améliorer la lisibilité du texte sur l'image, vous pouvez ajouter un fond semi-transparent */
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px; /* Espacement intérieur pour le fond semi-transparent */
+  box-sizing: border-box; /* S'assurer que le padding est inclus dans la largeur */
+}
+
+.hero__title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.hero__text {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.hero__actions {
+  /* ajouter d'autres styles si nécessaire */
+}
+
+.hero__button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-right: 10px; /* espace entre les boutons */
+  display: inline-block; /* pour permettre le padding */
+  transition: background-color 0.3s; /* Animation de transition pour le survol */
+}
+
+.hero__button:hover {
+  background-color: #2980b9;
+}

@@ -1,0 +1,212 @@
+:root {
+  --facebook: #3b5998;
+  --twitter: #1da1f2;
+  --instagram: #e4405f;
+  --linkedin: #0077b5;
+}
+
+.team__grid {
+  display: grid;
+  padding: 3rem;
+  justify-items: center;
+  align-items: start;
+  gap: 4rem;
+  margin: 0 auto;
+}
+
+.team__header {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 3rem;
+}
+
+.team__title {
+  font-family: "Lato-HairlineItalic", "Open Sans", sans-serif;
+  font-size: 5rem;
+  font-style: italic;
+}
+
+.team__slogan {
+  font-size: 2.5rem;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.team__card {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3rem;
+  width: 100%;
+  background-color: var(--teamcard__bgcolor);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+
+.team__card:hover .team__card--front {
+  transform: rotateY(180deg); /* Rotation de la face avant lorsqu'on survole */
+}
+
+.team__card:hover .team__card--back {
+  transform: rotateY(0deg); /* Rotation du dos lorsqu'on survole */
+}
+
+.team__figure {
+  border: solid 0px green;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.team__avatar {
+  border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.team__role {
+  font-family: Lato-thin, sans-serif;
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: var(--teamcard--role__color);
+}
+
+.team__name {
+  margin-top: 1rem;
+  font-size: em;
+  font-weight: 300;
+  color: var(--teamcard--name__color);
+}
+
+.team__bio {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 100;
+  height: 10rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.team__socials {
+  margin-top: auto;
+  text-align: center;
+}
+
+.team__icon {
+  display: inline-block;
+  border: solid 0px red;
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  padding-top: 0.2rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.team__icon--facebook {
+  color: var(--facebook);
+}
+
+.team__icon--twitter {
+  color: var(--twitter);
+}
+
+.team__icon--instagram {
+  color: var(--instagram);
+}
+
+.team__icon--linkedin {
+  color: var(--linkedin);
+}
+
+.team__icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: calc(100% + 1rem);
+  height: calc(100% + 1rem);
+  background-color: transparent;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.team__icon:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  z-index: -1;
+}
+
+.team__icon--facebook:hover::before {
+  background-color: var(--facebook); /* Facebook */
+}
+
+.team__icon--twitter:hover::before {
+  background-color: var(--twitter); /* Twitter */
+}
+
+.team__icon--instagram:hover::before {
+  background-color: var(--instagram); /* Instagram */
+}
+
+.team__icon--linkedin:hover::before {
+  background-color: var(--linkedin); /* LinkedIn */
+}
+
+.team__icon--facebook:hover,
+.team__icon--twitter:hover,
+.team__icon--instagram:hover,
+.team__icon--linkedin:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 700px) {
+  .team__grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    ); /* Grille auto-adaptative avec une largeur minimale de 200px */
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .team__grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    ); /* Grille auto-adaptative avec une largeur minimale de 200px */
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .team__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

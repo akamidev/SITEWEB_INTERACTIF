@@ -1,0 +1,77 @@
+:root {
+  --facebook: #3b5998;
+  --twitter: #1da1f2;
+  --instagram: #e4405f;
+  --linkedin: #0077b5;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 4rem;
+  width: 100%;
+  border: solid 1px red;
+}
+
+.footer__title {
+  text-align: center;
+}
+
+.footer__title img {
+  width: 5vw;
+}
+
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  color: #fff;
+  margin: 3rem 0;
+}
+
+.footer__content > * {
+  flex: 1;
+}
+
+.footer__grid {
+  color: #fff;
+}
+
+.footer__socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.footer__icon {
+  display: inline-block;
+  border: solid 0px red;
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  padding-top: 0.2rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.footer__icon--facebook {
+  background-color: var(--facebook); /* Facebook */
+}
+
+.footer__icon--twitter {
+  background-color: var(--twitter); /* Twitter */
+}
+
+.footer__icon--instagram {
+  background-color: var(--instagram); /* Instagram */
+}
+
+.footer__icon--linkedin {
+  background-color: var(--linkedin); /* LinkedIn */
+}

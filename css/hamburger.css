@@ -1,0 +1,127 @@
+/* Styles de base (Mobile First) */
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  background-color: #000000;
+}
+
+.navbar__container {
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border: solid red 0px;
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.3s ease, max-height 1s ease;
+  transition-delay: 0.2s;
+}
+
+.navbar__container.active {
+  visibility: visible;
+  opacity: 1;
+  max-height: 200px; /* Ajustez la hauteur en fonction du contenu */
+}
+
+.navbar__item {
+  position: relative;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar__item a {
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.navbar__item a::before {
+  content: "\2771";
+  margin-right: 0.5rem;
+}
+
+.navbar__item a:hover {
+  cursor: pointer;
+}
+
+/* Effet de soulignement */
+.underline {
+  position: absolute;
+  bottom: -1rem;
+  left: 0.5rem;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.navbar__sitename {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar__logo img {
+  width: auto;
+  max-height: 5rem;
+}
+
+/* Burger Menu (visible uniquement sur mobile) */
+.burger {
+  display: flex;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3rem;
+  position: absolute;
+  justify-self: center;
+  top : 2rem;
+  left : 2rem;
+}
+
+/* Styles pour tablettes et ordinateurs de bureau */
+
+@media screen and (min-width: 37.5em) { /* 600px / 16px = 37.5em */
+ .burger {
+   left : calc(100vw - 5rem);
+ }
+  .navbar__toggle {
+
+justify-self: center;
+  }
+}
+
+@media screen and (min-width: 56em) { /* 56em */
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar__container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar__container.active {
+    display: flex;
+  }
+
+  .navbar__item a::before {
+    content: "";
+    margin-right: 0.5rem;
+  }
+}

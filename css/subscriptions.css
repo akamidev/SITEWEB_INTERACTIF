@@ -1,0 +1,191 @@
+:root {
+  --white: #fff;
+  --light-grey: #f5f5f5;
+  --dark-grey: #333333;
+  --teal: #32a8a4;
+  --soft-purple: #9b6ecc;
+  --forest-green: #2e7d32;
+  --mustard-yellow: #ffb400;
+  --burgundy: #8b0000;
+}
+
+.subscriptions {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 2rem auto;
+  border: solid red 0px;
+}
+
+.subscriptions__title {
+  margin-bottom: 4rem;
+  display: block;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subscriptions__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscriptions__check > * {
+  margin: 0 3px;
+}
+
+.subscriptions__switch {
+  display: inline-block;
+  height: 37px;
+  position: relative;
+  width: 67px;
+}
+
+.subscriptions__switch input {
+  display: none;
+}
+
+.subscriptions__slider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--light-grey);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.subscriptions__slider::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  bottom: 2px;
+  width: 32px;
+  height: 32px;
+  background: var(--white);
+  transition: all 0.4s;
+}
+
+input:checked + .subscriptions__slider {
+  background: var(--teal); /* Couleur active du slider */
+}
+
+input:checked + .subscriptions__slider::before {
+  transform: translateX(26px);
+}
+
+.subscriptions__slider--round {
+  border-radius: 34px;
+}
+.subscriptions__slider::before {
+  border-radius: 50%;
+}
+
+.subscriptions__price {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.subscriptions__price-box {
+  width: 40rem;
+  text-align: center;
+  background-color: var(--white);
+  padding-bottom: 3rem;
+  margin: 3rem 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.subscriptions__price-box p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  /* color: var(--white); */
+}
+
+.subscriptions__price-box h4 span {
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+
+.subscriptions__price-box h4 span:nth-child(2) {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.subscriptions__price-box ul {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.subscriptions__price-box ul li {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--color-grey);
+}
+
+.subscriptions__price-box ul li:last-child {
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.subscriptions__price-box a {
+  font-size: 1.9rem;
+  text-decoration: none;
+  background-color: var(--color-sec);
+  padding: 1.2rem 3rem;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.box {
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+  color: var(--white);
+}
+
+.box1,
+.btn1 {
+  background: linear-gradient(
+    to right bottom,
+    var(--teal),
+    var(--forest-green)
+  );
+}
+
+.box2,
+.btn2 {
+  background: linear-gradient(
+    to right bottom,
+    var(--soft-purple),
+    var(--burgundy)
+  );
+}
+
+.box3,
+.btn3 {
+  background: linear-gradient(
+    to right bottom,
+    var(--mustard-yellow),
+    var(--dark-grey)
+  );
+}
+
+@media screen and (min-width: 800px) {
+  .subscriptions__price {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .subscriptions__price-box {
+    width: 35rem;
+  }
+}
