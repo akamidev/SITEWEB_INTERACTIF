@@ -42,4 +42,4 @@ Les contributions sont bienvenues. Veuillez suivre les directives standard pour 
 
 ## 📄 Licence
 
-Ce projet est sous licence MIT. Pour plus de détails, voir le fichier `LICENSE`.
+Ce projet est sous licence MIT. Pour plus de détails, voir le fichier [LICENSE](https://github.com/akamidev/SITEWEB_INTERACTIF/blob/main/LICENSE).
