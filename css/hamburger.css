@@ -79,7 +79,7 @@
 
 /* Burger Menu (visible uniquement sur mobile) */
 .burger {
-  display: flex;
+  display: none;
   color: white;
   font-weight: bold;
   font-size: 3rem;
