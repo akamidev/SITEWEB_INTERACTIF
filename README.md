@@ -14,7 +14,7 @@ Ce projet est développé dans le cadre de mon TP2 de JavaScript. L'objectif pri
 
 Cliquez sur l'image ci-dessous pour visionner le projet :
 
-[![Démonstration du Site](./Photo22.png)](https://akamidev.github.io/SITEWEB_INTERACTIF/index.html/)
+[![Démonstration du Site](./photo22.png)](https://akamidev.github.io/SITEWEB_INTERACTIF/)
 
 Ou accédez directement via ce lien : [🔗 Voir la Démonstration](https://akamidev.github.io/SITEWEB_INTERACTIF/index.html/)
 
