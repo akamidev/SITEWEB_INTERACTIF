@@ -18,7 +18,7 @@ Cliquez sur l'image ci-dessous pour visionner le projet :
     <img src="./photo22.png" alt="Démonstration du Site" width="500">
 </a>
 
-Ou accédez directement via ce lien : [🔗 Voir la Démonstration](https://akamidev.github.io/SITEWEB_INTERACTIF/index.html/" target="_blank")
+Ou accédez directement via ce lien : [🔗 Voir la Démonstration](https://akamidev.github.io/SITEWEB_INTERACTIF/index.html/)
 
 ## 🛠 Fonctionnalités
 
