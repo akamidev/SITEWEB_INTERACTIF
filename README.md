@@ -1,7 +1,24 @@
-# SITEWEB_INTERACTIF
+# 🌐 SITEWEB_INTERACTIF
+
+![HTML](https://img.shields.io/badge/HTML-5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/Deployment-GitHub%20Pages-181717?style=for-the-badge&logo=github&logoColor=white)
+
+---
 
 ## 🎯 Objectif
-Ce projet est développé dans le cadre de mon TP2 de JavaScript à PREPAVENIR, Franconville. L'objectif principal est de réaliser un CRUD complet en JavaScript pur (Vanilla JS) et d'implémenter des fonctionnalités interactives sur un site web statique, sans l'utilisation de frameworks.
+Ce projet est développé dans le cadre de mon TP2 de JavaScript. L'objectif principal est de réaliser un CRUD complet en JavaScript pur (Vanilla JS) et d'implémenter des fonctionnalités interactives sur un site web statique, sans l'utilisation de frameworks.
+
+## 🌟 **Démonstration du site**
+
+Cliquez sur l'image ci-dessous pour visionner le projet :
+
+[![Démonstration du Site](./Photo22.png)](https://akamidev.github.io/SITEWEB_INTERACTIF/index.html/)
+
+Ou accédez directement via ce lien : [🔗 Voir la Démonstration](https://akamidev.github.io/SITEWEB_INTERACTIF/index.html/)
+
+---
 
 ## 🛠 Fonctionnalités
 
